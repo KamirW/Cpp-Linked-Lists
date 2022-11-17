@@ -1,12 +1,11 @@
-template <class T>
-class Node {
-    public:
-        T data;
-        Node* next;
+#include "./headers/Node.h"
+
+        template<class T> 
+        Node<T>::Node(T data, Node<T>* next) : data(data), next(next) { }
+
+        template<class T>
+        Node<T>::Node(T data) : data(data), next(nullptr) { }
         
-        Node(T data, Node* next) : data(data), next(next) { }
-
-        Node(T data) : data(data), next(nullptr) { }
-
-        Node() : data(nullptr), next(nullptr) { };
-};
+        template<class T>
+        Node<T>::Node() : data(nullptr), next(nullptr) { }
+        

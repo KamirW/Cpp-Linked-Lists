@@ -15,8 +15,8 @@ template <class T> class SingleLinkedList {
 
 
     public:
-        SingleLinkedList() {
-            this->head = nullptr;
+        SingleLinkedList() : head(nullptr) {
+            
         }
 
         ~SingleLinkedList() {
